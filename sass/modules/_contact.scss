@@ -1,0 +1,29 @@
+#contact {
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    #note {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        input, textarea, button {
+            margin-top: 20px;
+        }
+        
+        button {
+            width: 30%;
+            margin: 20px auto 0;
+            background-color: #fff;
+            border: 3px solid $main;
+        }
+    }
+
+}
