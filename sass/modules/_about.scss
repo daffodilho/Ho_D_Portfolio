@@ -1,5 +1,4 @@
 #about {
-    background-color: #AAAAAA;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -8,8 +7,10 @@
         width: 100%;
 
         h2 {
-            width: 70%;
+            width: 80%;
             margin: 0 auto;
+            font-family: 'Roboto Slab', serif;
+            font-size: 0.8em;
         }
     }
 
@@ -18,7 +19,9 @@
         justify-content: space-evenly;
     }
 
-    #snap {
-        background-image: url('something.jpg');
+    #snap img {
+        width: 100vw;
+        margin-top: 60px;
     }
+
 }

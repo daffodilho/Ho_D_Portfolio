@@ -22,21 +22,26 @@
 <section id="folio">
   <div class="title">The Folio</div>
 
+  {{#each work}}
   <div class="folio-wrap">
     <div class="info">
-      info{{!-- fetch info from database --}}
+      <h2>{{title}}</h2>
     </div>
+
     <div class="preview">
-      preview{{!-- fetch image from db --}}
+      <a href="{{ID}}" class="work-link">
+        <img src="images/{{preview}}" alt="preview" class="preview">
+      </a>
     </div>
   </div>
+  {{/each}}
 </section>
 
 <section id="about">
-  <div class="title">About Me</div>
+  <div class="title">About me</div>
 
   <div id="bio">
-    <h2>Here is some lorem ipsum text. Here is more lorem ipsum text. blab laldksfj .dksj </h2>
+    <h2>Apa khabar? ("how are you?" in Malay) My name is Daffodil. I come from Malaysia. I design. I code. I never stop learning.  I would love to learn from you.</h2>
   </div>
 
   <div id="tech">
@@ -47,7 +52,9 @@
     <img src="#" alt="">
   </div>
 
-  <div id="snap"></div>
+  <div id="snap">
+    <img src="images/about.jpg" alt="me">
+  </div>
 </section>
 
 <section id="contact">
