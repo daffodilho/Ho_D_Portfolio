@@ -1,0 +1,55 @@
+.lightbox { 
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.9);
+    
+    .lb-content {
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+
+        h2{
+            font-size: 1.2em;
+        }
+
+        p{
+            font-size: 1em;
+            line-height: 1em;
+        }
+    }
+
+    .picture { 
+        width: 80%;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .video {
+        width: 80%;
+        margin: 0 auto;
+
+        video {
+            width: 100%;
+        }
+    }
+
+    .close {   
+        position: fixed; 
+        right: 24px;
+        top: 24px;
+        font-size: 2em;
+        color: $main;
+        border: 2px solid $main;
+        padding: 0 10px 2px;
+        cursor: pointer;
+    }
+}
+
+.show-lb { display: flex !important; flex-direction: column; }
