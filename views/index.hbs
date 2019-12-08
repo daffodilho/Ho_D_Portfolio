@@ -6,7 +6,8 @@
   </div>
 
   <div id="intro">
-    <h2>Hai,<br>Daffodil here.<br>I'm into<br>dynamic data</h2>
+    <h2>Hai,<br>Daffodil here.<br>I'm into<br>CHANGE</h2>
+    {{!-- <h2>Roses are red,<br>Violets are blue,<br>most Daffodils are yellow, <br>and this one codes and designs.</h2> --}}
   </div>
 
   <div id="nav">
@@ -20,7 +21,7 @@
 </header>
 
 <section id="folio">
-  <div class="title">The Folio</div>
+  {{!-- <div class="title">The Folio</div> --}}
 
   {{#each work}}
   <div class="folio-wrap">
@@ -38,40 +39,52 @@
 </section>
 
 <section id="about">
-  <div class="title">About me</div>
-
-  <div id="bio">
-    <h2>Apa khabar? ("how are you?" in Malay) My name is Daffodil. I come from Malaysia. I design. I code. I never stop learning.  I would love to learn from you.</h2>
-  </div>
-
-  <div id="tech">
-    <img src="#" alt="">
-    <img src="#" alt="">
-    <img src="#" alt="">
-    <img src="#" alt="">
-    <img src="#" alt="">
-  </div>
-
   <div id="snap">
     <img src="images/about.jpg" alt="me">
   </div>
+  
+  <div class="title">About me</div>
+
+  <div id="bio">
+    <h2>I design.  I code.  I never stop learning.</h2>
+    <h3>My name is Daffodil and I hail from Malaysia. A few years back I discovered a new passion - web design and development - which is why I am where I am now. Currently I am polishing my skills at Fanshawe College, London Ontario.  Here are my favourite tools in a row.</h3>
+  </div>
+
+  <div id="tech">
+    <i class="fab fa-html5"></i>
+    <i class="fab fa-css3-alt"></i>
+    <i class="fab fa-js"></i>
+    <img src="images/nodejs.png" alt="nodejs">
+    <img src="images/cc.svg" alt="creative cloud">
+    <img src="images/c4d.png" alt="c4d">
+  </div>
+
 </section>
 
 <section id="contact">
   <div class="title">Contact Me</div>
 
-  <div id="note">Get in touch with me via social media or leave a message below.  You and me, we can make something the world will remember.</div>
-  <form action="" id="contact-form" method="POST">
-    <input placeholder="Your name" type="text" required autofocus>
-    <input placeholder="Your email" type="text" required autofocus>
-    <textarea placeholder="What's up?" type="text" required autofocus></textarea>
+  <div id="form-content">
+    <div id="note">
+      <h2>Get in touch with me via social media or leave a message below.  You and me, we can make something the world will remember.</h2>
+    </div>
+
+    <form action="" id="contact-form" method="POST">
+      <input placeholder="Your name" type="text" required autofocus>
+      <input placeholder="Your email" type="text" required autofocus>
+      <textarea placeholder="What's up?" type="text" required autofocus></textarea>
+      <button name="submit" type="submit" id="submit-btn">Submit</button>
+    </form>
+  </div>
   
-    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-  </form>
 </section>
 
 <footer id="footer"> <!--can get rid of ID after-->
-  
+  <i class="fab fa-github-square"></i>
+  <i class="fab fa-linkedin"></i>
+  <i class="fab fa-instagram"></i>
+  <i class="fab fa-facebook-square"></i>
+  <i class="fab fa-pinterest-square"></i>
 </footer>
 
 <section class="lightbox">

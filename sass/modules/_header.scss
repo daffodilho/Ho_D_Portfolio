@@ -2,12 +2,13 @@
     height: 2vh;
     width: 100%;
     background-color: $main;
+    display: none;
 }
 
 header {
     width: 80%;
     margin: 0 auto;
-    height: 98vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -15,12 +16,13 @@ header {
     #logo {
         width: 90px;
         height: auto;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     #intro {
         text-transform: uppercase;
         font-size: 4em;
+        color: $light;
     }
 
     #nav ul {

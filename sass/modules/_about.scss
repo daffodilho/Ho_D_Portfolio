@@ -1,27 +1,37 @@
 #about {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+    background-color: $light;
+    padding-bottom: 20px;
 
     #bio {
         width: 100%;
 
-        h2 {
+        h2, h3 {
             width: 80%;
-            margin: 0 auto;
-            font-family: 'Roboto Slab', serif;
+            margin: 20px auto;
+            font-family: 'Open sans', sans-serif;
             font-size: 0.8em;
+            line-height: 1.6em;
+            color: $mid;
         }
+
+        h2 {color: $red; font-size: 1em;}
+
     }
 
     #tech {
         display: flex;
         justify-content: space-evenly;
+
+        i {width: 15px;}
+
+        img {height: 15px;}
     }
 
     #snap img {
         width: 100vw;
-        margin-top: 60px;
     }
 
 }
