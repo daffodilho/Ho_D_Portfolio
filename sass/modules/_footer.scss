@@ -1,0 +1,12 @@
+footer {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    
+    i {
+        width: 30px;
+        height: 30px;
+        color: $main;
+    }
+}

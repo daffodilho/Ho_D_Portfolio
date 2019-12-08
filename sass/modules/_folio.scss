@@ -1,15 +1,21 @@
 #folio {
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    height: 100%;
+    padding: 10px 0;
+    background-color: $mid;
+    width: 80%;
+    margin: 0 auto;
 
     .folio-wrap {
         width: 100%;
         display: flex;
+        margin: 10px 0;
 
         .info {
             width: 20%;
             font-size: 0.6em;
+            color: $light;
 
             h2 {
                 width: 70%;
