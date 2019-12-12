@@ -17,7 +17,7 @@
             color: $mid;
         }
 
-        h3 {color: $red; font-size: 1em;}
+        h3 {color: $red; font-size: 1em; font-weight: 800;}
 
     }
 
@@ -27,7 +27,7 @@
 
         i {width: 15px;}
 
-        img {height: 15px;}
+        img {height: 15px; filter: grayscale(1);}
     }
 
     #snap {
