@@ -1,0 +1,33 @@
+.videobox { 
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: $vb;
+    overflow-x: hidden;
+
+    .demo-reel { 
+        width: 80%;
+        margin: auto;
+
+        video {
+            width: 100%;
+        }
+    }
+
+    .close {   
+        position: fixed; 
+        right: 24px;
+        top: 24px;
+        font-size: 2em;
+        padding: 0 8px 4px;
+        color: $vb;
+        background-color: $main;
+        cursor: pointer;
+        z-index: 10;
+    }
+}
+
+.show-vb { display: flex !important; flex-direction: column; }

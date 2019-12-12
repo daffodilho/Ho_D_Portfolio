@@ -5,6 +5,8 @@
 @import 'modules/contact';
 @import 'modules/footer';
 @import 'modules/lightbox';
+@import 'modules/videobox';
+
 
 body {
     overflow-x: hidden;
@@ -13,11 +15,42 @@ body {
     background-color: $mid;
 }
 
+.hidden {
+    display: none;
+}
+
+// #xray {
+//     position: absolute;
+//     z-index: 5;
+//     top: calc(50% - 10rem);
+//     left: calc(50% - 10rem);
+//     width: 10rem;
+//     height: 10rem;
+//     background: url(/images/stick.jpg) 50% 50% no-repeat fixed;
+//     background-size: cover;
+//     border-radius: 50%;
+// }
+
 .title {
     text-transform: uppercase;
     font-size: 0.8em;
+    font-weight: 900;
     text-align: left;
     width: 80%;
     margin: 20px auto 0;
     color: $mid;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .title { 
+        margin: 40px auto 0; 
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title { 
+        margin: 60px auto 0; 
+        font-size: 1.25em;
+    }
 }
