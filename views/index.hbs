@@ -1,27 +1,39 @@
-<div id="border"></div>
+<header>
+  <h2 class="hidden">Header</h2>
+  {{!-- <div id="xray"></div> --}}
+  
+  <div id="top">
+    <div id="logo">
+      <object data="images/logo.svg" type="image/svg+xml"></object>
+    </div>
 
-<header id="header"><!-- can get rid of ID later-->
-  <div id="logo">
-    <object data="images/logo.svg" type="image/svg+xml"></object>
+    <div id="social">
+      <ul>
+        <li><a href="https://github.com/daffodilho"><i class="fab fa-github-square"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/daffodil-ho-844b96199/"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="daffodilho@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+        <li><a href="https://www.instagram.com/daffodil_create/"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
   </div>
-
+  
   <div id="intro">
-    <h2>Hai,<br>Daffodil here.<br>I'm into<br>CHANGE</h2>
+    <h2>Hai, <br>Daffodil here. <br>I do <br><span id="animate">creative work</span></h2>
     {{!-- <h2>Roses are red,<br>Violets are blue,<br>most Daffodils are yellow, <br>and this one codes and designs.</h2> --}}
   </div>
 
   <div id="nav">
     <ul>
-      <li><a href="#">Folio</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Reel</a></li>
+      <li><a id="reel-link">Reel</a></li>
+      <li><a href="#folio">Folio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </header>
 
 <section id="folio">
-  {{!-- <div class="title">The Folio</div> --}}
+  <h2 class="hidden">Portfolio Works</h2>
 
   {{#each work}}
   <div class="folio-wrap">
@@ -31,6 +43,8 @@
 
     <div class="preview">
       <a href="{{ID}}" class="work-link">
+        {{!-- <div class="edge left"></div>
+        <div class="edge right"></div> --}}
         <img src="images/{{preview}}" alt="preview" class="preview">
       </a>
     </div>
@@ -39,6 +53,7 @@
 </section>
 
 <section id="about">
+  <h2 class="hidden">About Me</h2>
   <div id="snap">
     <img src="images/about.jpg" alt="me">
   </div>
@@ -46,8 +61,8 @@
   <div class="title">About me</div>
 
   <div id="bio">
-    <h2>I design.  I code.  I never stop learning.</h2>
-    <h3>My name is Daffodil and I hail from Malaysia. A few years back I discovered a new passion - web design and development - which is why I am where I am now. Currently I am polishing my skills at Fanshawe College, London Ontario.  Here are my favourite tools in a row.</h3>
+    <h3>I design.  I code.  I never stop learning.</h3>
+    <p>My name is Daffodil and I hail from Malaysia. A few years back I discovered a new passion - web design and development - which is why I am where I am now. Currently I am polishing my skills at Fanshawe College, London Ontario.  Here are my favourite tools in a row.</p>
   </div>
 
   <div id="tech">
@@ -62,6 +77,8 @@
 </section>
 
 <section id="contact">
+  <h2 class="hidden">Contact</h2>
+
   <div class="title">Contact Me</div>
 
   <div id="form-content">
@@ -69,25 +86,26 @@
       <h2>Get in touch with me via social media or leave a message below.  You and me, we can make something the world will remember.</h2>
     </div>
 
-    <form action="" id="contact-form" method="POST">
-      <input placeholder="Your name" type="text" required autofocus>
-      <input placeholder="Your email" type="text" required autofocus>
-      <textarea placeholder="What's up?" type="text" required autofocus></textarea>
+    <form action="data/contact.php" id="contact-form" method="POST">
+      <input placeholder="Your name" type="text" id="name" name="name" required>
+      <input placeholder="Your email" type="text" id="email" name="email" required>
+      <textarea placeholder="What's up?" name="message" required></textarea>
       <button name="submit" type="submit" id="submit-btn">Submit</button>
     </form>
   </div>
   
 </section>
 
-<footer id="footer"> <!--can get rid of ID after-->
+{{!-- <footer id="footer"> <!--can get rid of ID after-->
   <i class="fab fa-github-square"></i>
   <i class="fab fa-linkedin"></i>
   <i class="fab fa-instagram"></i>
   <i class="fab fa-facebook-square"></i>
   <i class="fab fa-pinterest-square"></i>
-</footer>
+</footer> --}}
 
 <section class="lightbox">
+  <h2 class="hidden">Lightbox</h2>
     <span class="close">x</span>
         <div class="lb-content">
           <!-- render the database content here -->
@@ -98,7 +116,16 @@
         </div>
 
         <div class="video">
-          {{!-- render the video here --}}
+          <video controls id="videoTag"></video>
         </div>
 </section>
+
+<section class="videobox">
+  <h2 class="hidden">Videobox</h2>
+  <span class="close">x</span>
+  <div class="demo-reel">
+    <video controls autoplay id="demoTag"></video>
+  </div>
+</section>
+
 

@@ -4,27 +4,29 @@
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 30;
+    background-color: $lb;
+    border-top: 30px solid $main;
+    overflow-y: scroll;
     
     .lb-content {
         width: 80%;
-        margin: 0 auto;
-        color: white;
+        margin: 20px auto 0;
+        color: $mid;
 
         h2{
-            font-size: 1.2em;
+            font-size: 1.25em;
         }
 
         p{
             font-size: 1em;
-            line-height: 1em;
+            line-height: 1.25em;
         }
     }
 
     .picture { 
         width: 80%;
-        margin: 0 auto;
+        margin: 20px auto 0;
 
         img {
             width: 100%;
@@ -33,7 +35,7 @@
 
     .video {
         width: 80%;
-        margin: 0 auto;
+        margin: 20px auto;
 
         video {
             width: 100%;
@@ -42,13 +44,13 @@
 
     .close {   
         position: fixed; 
-        right: 24px;
-        top: 24px;
+        right: 5px;
+        top: 0;
         font-size: 2em;
-        color: $main;
-        border: 2px solid $main;
-        padding: 0 10px 2px;
+        padding: 0 8px 5px;
+        color: $lb;
         cursor: pointer;
+        z-index: 10;
     }
 }
 
