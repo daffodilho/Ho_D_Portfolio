@@ -1,5 +1,7 @@
+![logo](public/images/logo.svg)
+
 # Daffodil's Portfolio
-Portfolio website featuring selected works and hosted on heroku.  To view the live site, please head to [daffodilho.com](https://daffodilho.com)
+Portfolio website featuring selected works and hosted on heroku.  To view the live site, please click on this [link](https://daffodilho.herokuapp.com/)
 
 ## Project Info
 
