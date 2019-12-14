@@ -1,4 +1,4 @@
-![logo](public/images/logo.svg)
+<img src="https://github.com/daffodilho/Ho_D_Portfolio/blob/master/public/images/logo.svg" alt="logo" width="50px"/>
 
 # Daffodil's Portfolio
 Portfolio website featuring selected works and hosted on heroku.  To view the live site, please click on this [link](https://daffodilho.herokuapp.com/)
